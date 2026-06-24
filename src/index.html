@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OCR Web · 浏览器端 OCR 工作台</title>
+    <script type="importmap">
+    {
+      "imports": {
+        "lit": "https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.js",
+        "lit/": "https://cdn.jsdelivr.net/npm/lit@3.3.1/",
+        "@lit/reactive-element/": "https://cdn.jsdelivr.net/npm/@lit/reactive-element@2.1.1/"
+      }
+    }
+    </script>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      body {
+        background: #0b0d12;
+        color: #e5e7eb;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+          "Microsoft YaHei", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+      #boot {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        color: #6b7280;
+        gap: 10px;
+      }
+      .boot-spin {
+        width: 18px;
+        height: 18px;
+        border: 2px solid #3b82f6;
+        border-top-color: transparent;
+        border-radius: 50%;
+        animation: bspin 0.8s linear infinite;
+      }
+      @keyframes bspin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <app-root>
+      <div id="boot"><span class="boot-spin"></span> 正在加载应用…</div>
+    </app-root>
+    <script type="module" src="./app.ts"></script>
+  </body>
+</html>
