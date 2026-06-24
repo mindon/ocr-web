@@ -1,4 +1,4 @@
-# PP-OCRv6 Web · 浏览器端 OCR 工作台
+# OCR Web · 浏览器端 OCR 工作台
 
 纯浏览器端 OCR 工作台，支持本地图片识别、参数调整、历史记录等功能。无需服务器，所有推理均在浏览器中完成。
 
@@ -24,11 +24,11 @@
 
 1. **克隆项目**
    ```bash
-   git clone <repository-url>
-   cd ocr
+   git clone https://github.com/mindon/ocr-web
+   cd ocr-web
    ```
 
-2. **下载 PP-OCRv6 模型**
+2. **下载 PP-OCRv6 模型(若无)**
    
    从 [PaddleOCR 官方仓库](https://github.com/PaddlePaddle/PaddleOCR)  下载 ONNX 格式模型，放置到 `static/ppocrv6/` 目录：
    ```
@@ -103,6 +103,7 @@
 ## 🏗️ 项目结构
 
 ```
+ocr-web/
 ├── src/                      # 源代码
 │   ├── app.ts               # 应用入口
 │   ├── index.html            # HTML 入口
