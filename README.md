@@ -28,7 +28,7 @@
    cd ocr-web
    ```
 
-2. **下载 PP-OCRv6 模型(若无)**
+2. **下载 PP-OCRv6 模型(已包含)**
    
    从 [PaddleOCR 官方仓库](https://github.com/PaddlePaddle/PaddleOCR)  下载 ONNX 格式模型，放置到 `static/ppocrv6/` 目录：
    ```
@@ -45,7 +45,7 @@
            └── rec/
    ```
 
-3. **启动开发服务器**
+3. **启动开发服务器** <https://mindon.dev/biu/>
    ```bash
    biu --serve
    ```
