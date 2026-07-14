@@ -131,7 +131,7 @@ ocr-web/
 - **前端框架**：Lit 3（Web Components）
 - **OCR 引擎**：PP-OCRv6（飞桨）
 - **推理运行时**：ONNX Runtime Web
-- **构建工具**：biu（Bun 构建工具）
+- **构建工具**：[biu](https://mindon.dev/biu/)（a Bun based tool）
 - **语言**：TypeScript
 
 ## 📚 参考项目
